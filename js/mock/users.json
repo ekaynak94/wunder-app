@@ -1,0 +1,214 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "ms",
+        "first": "afet",
+        "last": "tazegül"
+      },
+      "location": {
+        "street": "1514 vatan cd",
+        "city": "amasya",
+        "state": "osmaniye",
+        "postcode": 47522,
+        "coordinates": {
+          "latitude": "5.6153",
+          "longitude": "60.6821"
+        },
+        "timezone": {
+          "offset": "-11:00",
+          "description": "Midway Island, Samoa"
+        }
+      },
+      "email": "afet.tazegül@example.com",
+      "login": {
+        "uuid": "0cf02f0f-6321-4746-8c95-293c7e163a57",
+        "username": "greendog644",
+        "password": "mancity",
+        "salt": "pjfCsyIU",
+        "md5": "6dc4320111b32b8dfda1255a6b9bb976",
+        "sha1": "f1e1a50eea3a520fea46c3e73a473745212c3395",
+        "sha256": "3c8377931bcfe922425edbb4b6b5d487ab1d2a6e4b35d823988fc8c24181923e"
+      },
+      "dob": {
+        "date": "1954-12-08T18:06:10Z",
+        "age": 64
+      },
+      "registered": {
+        "date": "2015-05-12T14:48:21Z",
+        "age": 4
+      },
+      "phone": "(904)-263-4400",
+      "cell": "(618)-713-9723",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/47.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/47.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/47.jpg"
+      },
+      "nat": "TR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "mrs",
+        "first": "mestan",
+        "last": "ayaydın"
+      },
+      "location": {
+        "street": "9171 filistin cd",
+        "city": "giresun",
+        "state": "şanlıurfa",
+        "postcode": 70666,
+        "coordinates": {
+          "latitude": "-15.7695",
+          "longitude": "174.2956"
+        },
+        "timezone": {
+          "offset": "+5:45",
+          "description": "Kathmandu"
+        }
+      },
+      "email": "mestan.ayaydın@example.com",
+      "login": {
+        "uuid": "926ce95c-aa43-4c9e-a7d2-a821f304f4b3",
+        "username": "blueostrich595",
+        "password": "snuggles",
+        "salt": "QtpVL3MD",
+        "md5": "4120243f9b69b690a167c3ffbb6dfbe6",
+        "sha1": "76a684918ae975db0711c633589472e0863030a2",
+        "sha256": "6035cb70c26ef69ad1cd43f54fe1271de04c5c7596fb6c3f1cf1d7370bb4600d"
+      },
+      "dob": {
+        "date": "1954-02-05T04:37:42Z",
+        "age": 65
+      },
+      "registered": {
+        "date": "2004-02-24T08:09:17Z",
+        "age": 15
+      },
+      "phone": "(202)-927-2042",
+      "cell": "(979)-036-0143",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/96.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg"
+      },
+      "nat": "TR"
+    },
+
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "meral",
+        "last": "denkel"
+      },
+      "location": {
+        "street": "4197 kushimoto sk",
+        "city": "İzmir",
+        "state": "zonguldak",
+        "postcode": 68597,
+        "coordinates": {
+          "latitude": "-42.0569",
+          "longitude": "114.8169"
+        },
+        "timezone": {
+          "offset": "-3:00",
+          "description": "Brazil, Buenos Aires, Georgetown"
+        }
+      },
+      "email": "meral.denkel@example.com",
+      "login": {
+        "uuid": "9405636d-a4eb-4247-bf6f-fd8043a642d7",
+        "username": "whitezebra855",
+        "password": "hair",
+        "salt": "s6RipDT0",
+        "md5": "537fcef7470b5838ad55e52d76ba64a9",
+        "sha1": "56d6d95c95228b50e6691675464e9adcf5001b93",
+        "sha256": "cfcb0ae723d3bbd9f27bc65358441d80a2a6c78666bb4fdec4e47578c8708d52"
+      },
+      "dob": {
+        "date": "1974-03-25T20:03:00Z",
+        "age": 45
+      },
+      "registered": {
+        "date": "2002-10-12T02:10:36Z",
+        "age": 16
+      },
+      "phone": "(264)-218-4295",
+      "cell": "(868)-438-0494",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/26.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/26.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/26.jpg"
+      },
+      "nat": "TR"
+    },
+
+    {
+      "gender": "female",
+      "name": {
+        "title": "mrs",
+        "first": "ceylan",
+        "last": "duygulu"
+      },
+      "location": {
+        "street": "1102 atatürk sk",
+        "city": "denizli",
+        "state": "rize",
+        "postcode": 78867,
+        "coordinates": {
+          "latitude": "-25.8634",
+          "longitude": "113.0129"
+        },
+        "timezone": {
+          "offset": "-8:00",
+          "description": "Pacific Time (US & Canada)"
+        }
+      },
+      "email": "ceylan.duygulu@example.com",
+      "login": {
+        "uuid": "3462103a-c6f7-42ca-88ec-60a7ff078277",
+        "username": "smallkoala144",
+        "password": "taffy",
+        "salt": "x9BlVNWF",
+        "md5": "60261d103e4f8dc68508eb016113042c",
+        "sha1": "bf34facf3371d4adcb04d9b42890637fb9af4edb",
+        "sha256": "b53235c18cc10f3bf6987e3261b0ec01da6b99e1dd117ea81b8c8c4943c4e98d"
+      },
+      "dob": {
+        "date": "1978-09-04T23:26:37Z",
+        "age": 40
+      },
+      "registered": {
+        "date": "2009-05-18T22:53:59Z",
+        "age": 10
+      },
+      "phone": "(904)-514-4029",
+      "cell": "(513)-871-9414",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/92.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/92.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/92.jpg"
+      },
+      "nat": "TR"
+    }
+  ]
+}

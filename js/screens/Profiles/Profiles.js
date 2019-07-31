@@ -8,6 +8,7 @@ const Profiles = ({ users, navigation }) => {
     <View>
       <FlatList
         data={users}
+        ItemSeparatorComponent={() => <View style={styles.separator} />}
         renderItem={({ item }) => (
           <Text>{`${item.name.first} ${item.name.last}`}</Text>
         )}

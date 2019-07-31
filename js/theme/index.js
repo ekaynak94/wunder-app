@@ -6,6 +6,11 @@ const theme = {
     secondary: {
       main: "#b1b8c5"
     }
+  },
+  fonts: {
+    primary: {
+      main: "Gotham-Medium"
+    }
   }
 };
 

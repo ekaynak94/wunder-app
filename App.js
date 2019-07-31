@@ -1,11 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
 import { UsersProvider } from "./js/context/UsersContext";
+import StackNavigator from "./js/navigation/StackNavigator";
 
 const App = () => {
   return (
     <UsersProvider>
-      <Text>This is a wunderful app</Text>
+      <StackNavigator />
     </UsersProvider>
   );
 };

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import MyProfile from "./MyProfile";
 
 class MyProfileContainer extends Component {
   static navigationOptions = {
@@ -9,13 +9,7 @@ class MyProfileContainer extends Component {
   render() {
     const { navigation } = this.props;
     const user = navigation.getParam("user");
-    return (
-      <View>
-        <Text>{`This is ${user.name.title}. ${
-          user.name.last
-        }'s profile screen`}</Text>
-      </View>
-    );
+    return <MyProfile user={user} />;
   }
 }
 

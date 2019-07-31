@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, Image, FlatList, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
+import Icon from "react-native-vector-icons/AntDesign";
+import theme from "../../theme";
 
 const Profiles = ({ users, navigation }) => {
   return (
@@ -14,12 +16,24 @@ const Profiles = ({ users, navigation }) => {
           return (
             <TouchableOpacity
               onPress={() => navigation.navigate("MyProfile", { user })}
+              style={styles.listItem}
             >
-              <Image
-                style={styles.avatar}
-                source={{ uri: user.picture.medium }}
-              />
-              <Text>{`${user.name.first}, ${user.dob.age}`}</Text>
+              <View style={styles.userInfoContainer}>
+                <Image
+                  style={styles.userAvatar}
+                  source={{ uri: user.picture.medium }}
+                />
+                <Text style={styles.userInfo}>{`${user.name.first}, ${
+                  user.dob.age
+                }`}</Text>
+              </View>
+              <View>
+                <Icon
+                  name="right"
+                  size={25}
+                  color={theme.palette.secondary.main}
+                />
+              </View>
             </TouchableOpacity>
           );
         }}

@@ -30,7 +30,7 @@ const AppNavigator = createStackNavigator(
         fontSize: 20
       }
     }),
-    initialRouteName: "MyProfile"
+    initialRouteName: "Profiles"
   }
 );
 

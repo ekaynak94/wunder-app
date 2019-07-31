@@ -7,9 +7,13 @@ class MyProfileContainer extends Component {
   };
 
   render() {
+    const { navigation } = this.props;
+    const user = navigation.getParam("user");
     return (
       <View>
-        <Text>This is the my profile screen</Text>
+        <Text>{`This is ${user.name.title}. ${
+          user.name.last
+        }'s profile screen`}</Text>
       </View>
     );
   }

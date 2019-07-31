@@ -1,6 +1,5 @@
 import React from "react";
-import { View, FlatList, TouchableOpacity } from "react-native";
-import ProfileListItem from "../../components/ProfilesListItem";
+import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
@@ -10,13 +9,16 @@ const Profiles = ({ users, navigation }) => {
       <FlatList
         data={users}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        renderItem={({ item }) => (
-          <TouchableOpacity
-            onPress={() => navigation.navigate("MyProfile", { user: item })}
-          >
-            <ProfileListItem user={item} />
-          </TouchableOpacity>
-        )}
+        renderItem={({ item }) => {
+          const user = item;
+          return (
+            <TouchableOpacity
+              onPress={() => navigation.navigate("MyProfile", { user })}
+            >
+              <Text>{`${user.name.first} ${user.name.last}`}</Text>
+            </TouchableOpacity>
+          );
+        }}
         keyExtractor={item => item.login.uuid}
       />
     </View>

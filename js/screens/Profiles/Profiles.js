@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import { View, Text, Image, FlatList, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
@@ -15,7 +15,11 @@ const Profiles = ({ users, navigation }) => {
             <TouchableOpacity
               onPress={() => navigation.navigate("MyProfile", { user })}
             >
-              <Text>{`${user.name.first} ${user.name.last}`}</Text>
+              <Image
+                style={styles.avatar}
+                source={{ uri: user.picture.medium }}
+              />
+              <Text>{`${user.name.first}, ${user.dob.age}`}</Text>
             </TouchableOpacity>
           );
         }}

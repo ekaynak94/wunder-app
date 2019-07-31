@@ -6,11 +6,7 @@ const UsersContext = createContext();
 class UsersProvider extends Component {
   constructor() {
     super();
-    this.state = { users: usersData };
-  }
-
-  componentDidMount() {
-    console.log(this.state.users);
+    this.state = { users: usersData.results };
   }
 
   render() {

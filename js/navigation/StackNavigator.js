@@ -13,10 +13,10 @@ const AppNavigator = createStackNavigator(
     defaultNavigationOptions: ({ navigation }) => ({
       headerLeft:
         navigation.state.routeName === "MyProfile" ? (
-          <BackButton navigation={navigation} />
+          <BackButton onPress={() => navigation.goBack()} />
         ) : null
     }),
-    initialRouteName: "Profiles"
+    initialRouteName: "MyProfile"
   }
 );
 

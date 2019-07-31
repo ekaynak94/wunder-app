@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import UsersContext from "../../context/UsersContext";
+import Profiles from "./Profiles";
 
 class ProfilesContainer extends Component {
   static navigationOptions = {
@@ -7,9 +8,11 @@ class ProfilesContainer extends Component {
   };
   render() {
     return (
-      <View>
-        <Text>This is the my profiles screen</Text>
-      </View>
+      <UsersContext.Consumer>
+        {values => (
+          <Profiles users={values} navigation={this.props.navigation} />
+        )}
+      </UsersContext.Consumer>
     );
   }
 }

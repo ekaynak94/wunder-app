@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
+import ProfileListItem from "../../components/ProfilesListItem";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
@@ -9,9 +10,7 @@ const Profiles = ({ users, navigation }) => {
       <FlatList
         data={users}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        renderItem={({ item }) => (
-          <Text>{`${item.name.first} ${item.name.last}`}</Text>
-        )}
+        renderItem={({ item }) => <ProfileListItem user={item} />}
         keyExtractor={item => item.login.uuid}
       />
     </View>

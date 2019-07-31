@@ -25,7 +25,8 @@ const AppNavigator = createStackNavigator(
       },
       headerTitleStyle: {
         textTransform: "uppercase",
-        color: theme.palette.secondary.main
+        color: theme.palette.secondary.main,
+        fontFamily: theme.fonts.primary.main
       }
     }),
     initialRouteName: "MyProfile"

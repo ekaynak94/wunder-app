@@ -1,6 +1,4 @@
 import React, { Component, createContext } from "react";
-import usersData from "../../mock/users.json";
-import console = require("console");
 
 const UsersContext = createContext();
 
@@ -8,8 +6,7 @@ class UsersProvider extends Component {
   constructor() {
     super();
     this.state = {
-      users: usersData.results,
-      open: false
+      users: []
     };
     this.socket = new WebSocket(
       "wss://wunder-provider.herokuapp.com/socket.io/?EIO=3&transport=websocket"
@@ -17,9 +14,16 @@ class UsersProvider extends Component {
   }
 
   componentDidMount() {
-    this.socket.onmessage = ({ data }) => console.log(data)
+    this.socket.onmessage = ({ data }) => {
+      console.log(data);
+      const match = data.match(/{"results":\[.*\],"info":\{.*\}\}/);
+      if (match) {
+        const json = JSON.parse(match[0]);
+        this.setState({ users: [...this.state.users, json.results[0]] });
+      }
+    };
   }
-  r;
+
   render() {
     return (
       <UsersContext.Provider value={this.state.users}>

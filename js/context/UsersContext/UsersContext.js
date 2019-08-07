@@ -21,8 +21,9 @@ class UsersProvider extends Component {
     return null;
   }
 
-  addUser(user) {
-    this.setState({ users: [...this.state.users, user] });
+  addUser(newUser) {
+    if (!this.state.users.find(user => user.login.uuid === newUser.login.uuid))
+      this.setState({ users: [...this.state.users, newUser] });
   }
 
   render() {

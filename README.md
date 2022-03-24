@@ -1,6 +1,7 @@
 ## Description
 
 An app to display a list of user profiles fetched from a live output stream.
+Developed for wunder case strudy
 
 ## Technologies Used
 
